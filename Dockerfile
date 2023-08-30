@@ -7,9 +7,9 @@ COPY . .
 
 COPY ./.env.production ./.env
 
-RUN yarn
+RUN npm install
 
-RUN yarn build
+RUN npm run build
 
 EXPOSE 3000
-CMD [ "yarn", "start" ]
+CMD [ "npm", "run", "build" ]
