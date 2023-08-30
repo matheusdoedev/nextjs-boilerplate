@@ -1,34 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS Boilerplate
 
-## Getting Started
+It's a nextjs boilerplate to quickly start a nextjs project. This boilerplate use default Tailwind CSS plus SASS to style.
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### 1. Clone the project
+
+```sh
+git clone git@github.com:matheusdoedev/nextjs-boilerplate.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running project in development mode
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Install dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+npm install
 
-## Learn More
+yarn
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Run project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+yarn dev
+```
 
-## Deploy on Vercel
+## Running project in production mode
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1. Install dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+npm install
+
+yarn
+```
+
+### 2. Build project
+
+```sh
+npm run build
+
+yarn build
+```
+
+### 3. Run project
+
+```sh
+npm start
+
+yarn start
+```
+
+## Running project in production mode with Docker & Docker Compose
+
+#### 1. Set production env variables
+
+.env.production
+
+```env
+NODE_ENV='production'
+```
+
+#### 2. Run with docker-compose
+
+```sh
+docker-compose up
+
+# or in detach mode
+
+docker-compose up -d
+```
+
+## Technologies used in this boilerplate
+
+- React
+- Next.js
+- TypeScript
+- Axios
+- Formik
+- TailwindCSS
+- Yup
+- Testing Library
+- Jest
+- Prettier
+- SASS
+
+## Contributing
+
+1. Fork it (<git@github.com:matheusdoedev/pizza-army.git>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes following conventional commits pattern (`git commit -am 'feat: add some feature'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
